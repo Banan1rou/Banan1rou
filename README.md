@@ -1,4 +1,4 @@
-## Hola :) 👋
+## **Hola :)** 👋
 
 <!--
 **Banan1rou/Banan1rou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
