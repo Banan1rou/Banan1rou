@@ -1,0 +1,247 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Banan1rou/Banan1rou/blob/main/Tarea%2010\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Wf5KrEb6vrkR"
+      },
+      "source": [
+        "# Te damos la bienvenida a Colab"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def saludar(nombre):\n",
+        "   print(f\"Hola, {nombre}. ¡Bienvenido!\")\n",
+        "\n",
+        "# Ejemplo\n",
+        "saludar(\"Deiby\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2eumcgv3fAH8",
+        "outputId": "5b72c417-f634-4452-ee48-67390b1d1cfd"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hola, Deiby. ¡Bienvenido!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def cuadrado(numero):\n",
+        "    return numero ** 2\n",
+        "\n",
+        "# Pedir el número al usuario\n",
+        "num = float(input(\"Ingresa un número: \"))\n",
+        "\n",
+        "# Mostrar el resultado\n",
+        "print(\"El cuadrado es:\", cuadrado(num))"
+      ],
+      "metadata": {
+        "id": "ATRtD0FdgOPq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def mayor(num1, num2):\n",
+        "    if num1 > num2:\n",
+        "        print(\"El número mayor es:\", num1)\n",
+        "    elif num2 > num1:\n",
+        "        print(\"El número mayor es:\", num2)\n",
+        "    else:\n",
+        "        print(\"Los dos números son iguales\")\n",
+        "\n",
+        "# Pedir los números al usuario\n",
+        "a = float(input(\"Ingresa el primer número: \"))\n",
+        "b = float(input(\"Ingresa el segundo número: \"))\n",
+        "\n",
+        "# Llamar la función\n",
+        "mayor(a, b)"
+      ],
+      "metadata": {
+        "id": "MYXuVIyigeYn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def tipo_numero(numero):\n",
+        "    if numero > 0:\n",
+        "        print(\"El número es positivo\")\n",
+        "   elif numero < 0:\n",
+        "        print(\"El número es negativo\")\n",
+        "   else:\n",
+        "        print(\"El número es cero\")\n",
+        "\n",
+        "# Pedir el número al usuario\n",
+        "num = float(input(\"Ingresa un número: \"))\n",
+        "\n",
+        "# Llamar la función\n",
+        "tipo_numero(num)"
+      ],
+      "metadata": {
+        "id": "fX7rL9yDgu7X"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def area_rectangulo(base, altura):\n",
+        "    return base * altura\n",
+        "\n",
+        "base = float(input(\"Ingresa la base del rectángulo: \"))\n",
+        "altura = float(input(\"Ingresa la altura del rectángulo: \"))\n",
+        "\n",
+        "area = area_rectangulo(base, altura)\n",
+        "print(\"El área del rectángulo es:\", area)"
+      ],
+      "metadata": {
+        "id": "vIcJYZK7iBc2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def suma_lista(lista):\n",
+        "    return sum(lista)\n",
+        "\n",
+        "numeros = []\n",
+        "\n",
+        "cantidad = int(input(\"¿Cuántos números quieres ingresar?: \"))\n",
+        "\n",
+        "for i in range(cantidad):\n",
+        "    num = float(input(\"Ingresa un número: \"))\n",
+        "    numeros.append(num)\n",
+        "\n",
+        "resultado = suma_lista(numeros)\n",
+        "\n",
+        "print(\"La suma de los números es:\", resultado)"
+      ],
+      "metadata": {
+        "id": "kGsOxp_1iUs5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def contar_letras(palabra):\n",
+        "    return len(palabra)\n",
+        "\n",
+        "texto = input(\"Ingresa una palabra: \")\n",
+        "\n",
+        "cantidad = contar_letras(texto)\n",
+        "\n",
+        "print(\"La palabra tiene\", cantidad, \"letras\")"
+      ],
+      "metadata": {
+        "id": "SMjaLvlui9qH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def verificar_edad(edad):\n",
+        "    if edad >= 18:\n",
+        "        print(\"Es mayor de edad\")\n",
+        "    else:\n",
+        "        print(\"Es menor de edad\")\n",
+        "\n",
+        "edad = int(input(\"Ingresa tu edad: \"))\n",
+        "\n",
+        "verificar_edad(edad)"
+      ],
+      "metadata": {
+        "id": "qyfT79ZrjJ9u"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def celsius_a_fahrenheit(celsius):\n",
+        "    return (celsius * 9/5) + 32\n",
+        "\n",
+        "grados = float(input(\"Ingresa los grados Celsius: \"))\n",
+        "\n",
+        "fahrenheit = celsius_a_fahrenheit(grados)\n",
+        "\n",
+        "print(\"La temperatura en Fahrenheit es:\", fahrenheit)"
+      ],
+      "metadata": {
+        "id": "pvqSaQZzjUGe"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calcular_promedio(nota1, nota2, nota3):\n",
+        "    promedio = (nota1 + nota2 + nota3) / 3\n",
+        "    print(\"El promedio es:\", promedio)\n",
+        "    if promedio >= 3.0:\n",
+        "        print(\"Aprobó\")\n",
+        "    else:\n",
+        "        print(\"Reprobó\")\n",
+        "n1 = float(input(\"Ingresa la primera nota: \"))\n",
+        "n2 = float(input(\"Ingresa la segunda nota: \"))\n",
+        "n3 = float(input(\"Ingresa la tercera nota: \"))\n",
+        "calcular_promedio(n1, n2, n3)"
+      ],
+      "metadata": {
+        "id": "YXUOq-t5jjvv"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Te damos la bienvenida a Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
